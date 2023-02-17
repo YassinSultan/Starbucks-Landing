@@ -104,6 +104,20 @@ nav {
   text-decoration: none;
   color: var(--text-color);
 }
+.social-icons:hover li {
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+.social-icons li:hover {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
 @media (max-width: 767.98px) {
   .landing {
     padding: 80px 50px 130px 0px;
