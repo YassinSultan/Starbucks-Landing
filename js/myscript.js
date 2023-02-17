@@ -25,7 +25,14 @@ thumbs.forEach(thumb => {
     })
 });
 //change navbar color
-if (window.innerWidth < 767.98){
-    let navbar = document.querySelector(".navbar")
-    navbar.classList.add("navbar-dark")
-}
+//change navbar color
+window.addEventListener("resize",()=>{
+    if (window.innerWidth < 767.98){
+        let navbar = document.querySelector(".navbar")
+        navbar.classList.add("navbar-dark")
+    }
+    else{
+        let navbar = document.querySelector(".navbar")
+        navbar.classList.remove("navbar-dark")
+    }
+})
